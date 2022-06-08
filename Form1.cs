@@ -43,9 +43,9 @@ namespace ANote
         bool save = false;
         private void button1_Click(object sender, EventArgs e)
         {
-            saveFileDialog1.Filter = "文本文件|*.txt|ANote文件|*.anf";
+            saveFileDialog1.Filter = "TextFile|*.txt|ANote File|*.anf";
             saveFileDialog1.RestoreDirectory = true;
-            saveFileDialog1.FileName = "我的笔记";
+            saveFileDialog1.FileName = "TextFile";
             DialogResult result = saveFileDialog1.ShowDialog();
             if (result == DialogResult.OK && !string.IsNullOrEmpty(saveFileDialog1.FileName))
             {
