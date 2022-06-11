@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using AX;
+using System;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Threading;
 namespace ANote
 {
     public partial class Form1 : Form
@@ -25,6 +20,9 @@ namespace ANote
         {
             InitializeComponent();
         }
+        log log = new log();
+        string time = DateTime.Now.ToString("HH:mm:ss");
+        string filenap = System.Environment.CurrentDirectory + "\\" + DateTime.Now.ToString("yyyy-HH-mm-ss") +"log.alf";
         public enum MouseDirection
         {
             East,
@@ -43,7 +41,7 @@ namespace ANote
         bool save = false;
         private void button1_Click(object sender, EventArgs e)
         {
-            saveFileDialog1.Filter = "TextFile|*.txt|ANote File|*.anf";
+            saveFileDialog1.Filter = "TextFile|*.txt|ANoteFile|*.anf|ANoteLogFile|*.alf|All files|*.*";
             saveFileDialog1.RestoreDirectory = true;
             saveFileDialog1.FileName = "TextFile";
             DialogResult result = saveFileDialog1.ShowDialog();
@@ -61,7 +59,7 @@ namespace ANote
             string filePath = string.Empty;
             string fileContent = string.Empty;
             openFileDialog1 =new OpenFileDialog();
-            openFileDialog1.Filter = "TextFile|*.txt|ANote File|*.anf";
+            openFileDialog1.Filter = "TextFile|*.txt|ANoteFile|*.anf|ANoteLogFile|*.alf|All files|*.*";
             openFileDialog1.RestoreDirectory = true;
             DialogResult result = openFileDialog1.ShowDialog();
             if (result == DialogResult.OK && !string.IsNullOrEmpty(openFileDialog1.FileName))
@@ -72,7 +70,9 @@ namespace ANote
                 using (StreamReader reader = new StreamReader(fileStream))
                 {
                     fileContent = reader.ReadToEnd();
+                    reader.Close();
                     textBox1.Text =string.Empty;
+                    sr.Close();
                     textBox1.Text = fileContent;
                     sr.Close();
                     save = true;
@@ -96,7 +96,7 @@ namespace ANote
                 {
                     if (MessageBox.Show("File not save!,Save it?", "Prompt", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        saveFileDialog1.Filter = "TextFile|*.txt|ANote File|*.anf";
+                        saveFileDialog1.Filter = "TextFile|*.txt|ANoteFile|*.anf|ANoteLogFile|*.alf|All files|*.*";
                         saveFileDialog1.RestoreDirectory = true;
                         saveFileDialog1.FileName = "TextFile";
                         DialogResult result = saveFileDialog1.ShowDialog();
@@ -123,6 +123,10 @@ namespace ANote
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             save = false;
+            if(save == false)
+            {
+                log.WriteWarn(filenap,"textBox1","file not save!");
+            }
         }
         private void button3_MouseEnter(object sender, EventArgs e)
         {
@@ -133,12 +137,15 @@ namespace ANote
         {
             button3.BackColor = Color.Blue;
         }
+        
         private void Form1_Load(object sender, EventArgs e)
         {
             panel1.Width = Screen.PrimaryScreen.Bounds.Width;
             
+            log.Create(filenap);
+            log.WriteInfo(filenap, "Form1", "Opened");
         }
-        bool isMouseDown = false; 
+         bool isMouseDown = false; 
         MouseDirection direction = MouseDirection.None;
         private void ResizeWindow()
         {
@@ -216,6 +223,12 @@ namespace ANote
         {
             AboutBox1 form=new AboutBox1();
             form.Show();
+        }
+        private void notifyIcon1_Click(object sender, EventArgs e)
+        {
+            TopMost=true;
+            TopMost=false;
+            
         }
     }
 }
