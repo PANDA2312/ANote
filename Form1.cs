@@ -22,7 +22,7 @@ namespace ANote
         }
         log log = new log();
         string time = DateTime.Now.ToString("HH:mm:ss");
-        string filenap = System.Environment.CurrentDirectory + "\\" + DateTime.Now.ToString("yyyy-HH-mm-ss") +"log.alf";
+        string filenap = System.Environment.CurrentDirectory + "\\" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") +"log.alf";
         public enum MouseDirection
         {
             East,
