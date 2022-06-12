@@ -1629,6 +1629,14 @@
         ////////////////////////
 </value>
   </data>
+  <data name="button6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAABGdBTUEAALGPC/xhBQAAAAd0SU1FB+YG
+        DAIiNEzdftwAAAAXdEVYdFNvZnR3YXJlAEdMRFBORyB2ZXIgMy40cYWk4QAAAF1JREFUSEvtzTEKwDAM
+        xdDc/9KuV9caiok6eXgYRMg/EfEbjBaMFowWjBaMlh4y3dL+bgEeTexYntomdixPbRM7lqe2iR3LU9vE
+        57Fb2t/vYMJowWjBaMFoweiI8wA/3ANuuXLacAAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAgoIAAAAAGABg0QAAFgAAACgAAACCAAAABAEAAAEAGAAAAAAAONEAAAAAAAAAAAAAAAAAAAAA

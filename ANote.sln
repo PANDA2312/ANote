@@ -5,16 +5,27 @@ VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ANote", "ANote.csproj", "{6DC58C48-83A7-4876-B7B3-945E55E6635E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alog", "..\Alog\Alog.csproj", "{A4FFB9A0-978E-4250-96C5-AC240C996BDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		new|Any CPU = new|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6DC58C48-83A7-4876-B7B3-945E55E6635E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6DC58C48-83A7-4876-B7B3-945E55E6635E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DC58C48-83A7-4876-B7B3-945E55E6635E}.new|Any CPU.ActiveCfg = new|Any CPU
+		{6DC58C48-83A7-4876-B7B3-945E55E6635E}.new|Any CPU.Build.0 = new|Any CPU
 		{6DC58C48-83A7-4876-B7B3-945E55E6635E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DC58C48-83A7-4876-B7B3-945E55E6635E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4FFB9A0-978E-4250-96C5-AC240C996BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4FFB9A0-978E-4250-96C5-AC240C996BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4FFB9A0-978E-4250-96C5-AC240C996BDB}.new|Any CPU.ActiveCfg = new|Any CPU
+		{A4FFB9A0-978E-4250-96C5-AC240C996BDB}.new|Any CPU.Build.0 = new|Any CPU
+		{A4FFB9A0-978E-4250-96C5-AC240C996BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4FFB9A0-978E-4250-96C5-AC240C996BDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

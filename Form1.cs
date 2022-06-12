@@ -154,14 +154,13 @@ namespace ANote
             save = false;
             if(save == false)
             {
-                log.WriteWarn(filenap,"textBox1","file not save!");
+                log.WriteWarn(filenap,"textBox1","text changed!");
             }
         }
         private void button3_MouseEnter(object sender, EventArgs e)
         {
             button3.BackColor = Color.Red;
         }
-
         private void button3_MouseLeave(object sender, EventArgs e)
         {
             button3.BackColor = Color.Blue;
@@ -173,7 +172,7 @@ namespace ANote
             this.Init();
             this.RegisteEvent();
             log.Create(filenap);
-            log.WriteInfo(filenap, "Form1", "Opened");
+            log.WriteInfo(filenap, "main", "ANote Running,ver 1.0.3");
         }
          bool isMouseDown = false; 
         MouseDirection direction = MouseDirection.None;
@@ -247,7 +246,8 @@ namespace ANote
         {
             textBox1.Size = this.ClientSize;
             button3.Left = this.ClientSize.Width - 27;
-            button4.Left = this.ClientSize.Width - 54;
+            button4.Left = this.ClientSize.Width - 81;
+            button6.Left = this.ClientSize.Width - 54;
         }
         private void button5_Click(object sender, EventArgs e)
         {
@@ -258,7 +258,24 @@ namespace ANote
         {
             TopMost=true;
             TopMost=false;
-            
+        }
+        bool biggest = false;
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (biggest==false)
+            {
+                this.ClientSize = Screen.PrimaryScreen.WorkingArea.Size;
+                this.Top = 0;
+                this.Left = 0;
+                biggest = true;
+            }
+            else
+            {
+                this.ClientSize=new System.Drawing.Size(758,484);
+                this.Top = Screen.PrimaryScreen.WorkingArea.Height / 4;
+                this.Left = Screen.PrimaryScreen.WorkingArea.Width / 4;
+                biggest = false;
+            }    
         }
     }
 }

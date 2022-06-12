@@ -10,7 +10,7 @@ namespace AX
         public void Create(string filepath)
         {
             File.Create(filepath).Close();
-            File.AppendAllText(filepath,"["+time+"]"+"[ALog/INFO]ALog,version 1.0.0"+enter);
+            File.AppendAllText(filepath,"ALog,version 1.0.0"+enter);
         }
         public void WriteInfo(string filepath, string type,string contents)
         {
