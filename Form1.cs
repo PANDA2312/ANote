@@ -39,6 +39,35 @@ namespace ANote
             None
         }
         bool save = false;
+        void Init()
+        {
+            this.AllowDrop = true;
+        }
+        void RegisteEvent()
+        {
+            this.DragEnter += textBox1_DragEnter;
+            this.DragDrop += textBox1_DragDrop;
+        }
+        private void textBox1_DragDrop(object sender, DragEventArgs e)
+        {
+            IDataObject ido = e.Data;    
+            string[] paths = (string[])ido.GetData(DataFormats.FileDrop);
+            foreach (var path in paths)
+            {
+                using(StreamReader sr = new StreamReader(path))
+                {
+                    string text=sr.ReadToEnd();
+                    textBox1.Text = string.Empty;
+                    sr.Close();
+                    textBox1.Text = text;
+                }
+            }
+            
+        }
+        private void textBox1_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             saveFileDialog1.Filter = "TextFile|*.txt|ANoteFile|*.anf|ANoteLogFile|*.alf|All files|*.*";
@@ -141,7 +170,8 @@ namespace ANote
         private void Form1_Load(object sender, EventArgs e)
         {
             panel1.Width = Screen.PrimaryScreen.Bounds.Width;
-            
+            this.Init();
+            this.RegisteEvent();
             log.Create(filenap);
             log.WriteInfo(filenap, "Form1", "Opened");
         }

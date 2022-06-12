@@ -18,7 +18,6 @@ namespace ANote
             this.labelProductName.Text = AssemblyProduct;
             this.labelVersion.Text = String.Format("版本 {0}", AssemblyVersion);
             this.labelCopyright.Text = AssemblyCopyright;
-            this.textBoxDescription.Text = AssemblyDescription;
         }
 
         #region 程序集特性访问器
@@ -73,7 +72,6 @@ namespace ANote
                 return ((AssemblyProductAttribute)attributes[0]).Product;
             }
         }
-
         public string AssemblyCopyright
         {
             get
