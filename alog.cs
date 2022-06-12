@@ -14,38 +14,15 @@ namespace AX
         }
         public void WriteInfo(string filepath, string type,string contents)
         {
-            try
-            {
-                File.AppendAllText(filepath, "[" + time + "]" + "[" + type + "/INFO]" + contents+enter);
-            }
-            catch (Exception)
-            {
-                File.AppendAllText(filepath, "[" + time + "]" + "[ALog/ERROR]" + "Cannot write,file in use" + enter);
-            }
+            File.AppendAllText(filepath, "[" + time + "]" + "[" + type + "/INFO]" + contents+enter);
         }
         public void WriteError(string filepath, string type, string contents)
         {
-            string time = DateTime.Now.ToString("HH:mm:ss");
-            try
-            {
-                File.AppendAllText(filepath, "[" + time + "]" + "[" + type + "/ERROR]" + contents + enter);
-            }
-            catch(Exception)
-            {
-                File.AppendAllText(filepath, "[" + time + "]" + "[ALog/ERROR]" + "Cannot write,file in use" + enter);
-            }
+            File.AppendAllText(filepath, "[" + time + "]" + "[" + type + "/ERROR]" + contents + enter);
         }
         public void WriteWarn(string filepath, string type, string contents)
         {
-            string time = DateTime.Now.ToString("HH:mm:ss");
-            try
-            {
-                File.AppendAllText(filepath, "[" + time + "]" + "[" + type + "/WARN]" + contents+enter);
-            }
-            catch (Exception)
-            {
-                File.AppendAllText(filepath, "[" + time + "]" + "[ALog/ERROR]" + "Cannot write,file in use"+enter);
-            }   
+            File.AppendAllText(filepath, "[" + time + "]" + "[" + type + "/WARN]" + contents+enter); 
         }
     }
 }

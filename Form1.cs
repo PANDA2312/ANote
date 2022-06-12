@@ -39,10 +39,6 @@ namespace ANote
             None
         }
         bool save = false;
-        void Init()
-        {
-            this.AllowDrop = true;
-        }
         void RegisteEvent()
         {
             this.DragEnter += textBox1_DragEnter;
@@ -54,13 +50,11 @@ namespace ANote
             string[] paths = (string[])ido.GetData(DataFormats.FileDrop);
             foreach (var path in paths)
             {
-                using(StreamReader sr = new StreamReader(path))
-                {
-                    string text=sr.ReadToEnd();
-                    textBox1.Text = string.Empty;
-                    sr.Close();
-                    textBox1.Text = text;
-                }
+                StreamReader sr = new StreamReader(path);
+                string text=sr.ReadToEnd();
+                textBox1.Text = string.Empty;
+                sr.Close();
+                textBox1.Text = text;
             }
             
         }
@@ -96,23 +90,20 @@ namespace ANote
                 filePath = openFileDialog1.FileName;
                 StreamReader sr = new StreamReader(openFileDialog1.FileName);
                 var fileStream = openFileDialog1.OpenFile();
-                using (StreamReader reader = new StreamReader(fileStream))
-                {
-                    fileContent = reader.ReadToEnd();
-                    reader.Close();
-                    textBox1.Text =string.Empty;
-                    sr.Close();
-                    textBox1.Text = fileContent;
-                    sr.Close();
-                    save = true;
-                }
+                StreamReader reader = new StreamReader(fileStream);
+                fileContent = reader.ReadToEnd();
+                reader.Close();
+                textBox1.Text =string.Empty;
+                sr.Close();
+                textBox1.Text = fileContent;
+                sr.Close();
+                save = true;
             }
         }
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
             isMouseDown = true;
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             if (save == false)
@@ -121,32 +112,29 @@ namespace ANote
                 {
                     Close();
                 }
+                else if (MessageBox.Show("File not save!,Save it?", "Prompt", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    saveFileDialog1.Filter = "TextFile|*.txt|ANoteFile|*.anf|ANoteLogFile|*.alf|All files|*.*";
+                    saveFileDialog1.RestoreDirectory = true;
+                    saveFileDialog1.FileName = "TextFile";
+                    DialogResult result = saveFileDialog1.ShowDialog();
+                    if (result == System.Windows.Forms.DialogResult.OK && !string.IsNullOrEmpty(saveFileDialog1.FileName))
+                    {
+                        StreamWriter sw = new StreamWriter(saveFileDialog1.FileName, false, Encoding.UTF8);
+                        sw.Flush();
+                        sw.Write(textBox1.Text);
+                        save = true;
+                        sw.Close();
+                    }
+                }
                 else
                 {
-                    if (MessageBox.Show("File not save!,Save it?", "Prompt", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                    {
-                        saveFileDialog1.Filter = "TextFile|*.txt|ANoteFile|*.anf|ANoteLogFile|*.alf|All files|*.*";
-                        saveFileDialog1.RestoreDirectory = true;
-                        saveFileDialog1.FileName = "TextFile";
-                        DialogResult result = saveFileDialog1.ShowDialog();
-                        if (result == System.Windows.Forms.DialogResult.OK && !string.IsNullOrEmpty(saveFileDialog1.FileName))
-                        {
-                            StreamWriter sw = new StreamWriter(saveFileDialog1.FileName, false, Encoding.UTF8);
-                            sw.Flush();
-                            sw.Write(textBox1.Text);
-                            save = true;
-                            sw.Close();
-                        }
-                    }
-                    else
-                    {
-                        Close();
-                    }
+                    Close();
                 }
             }
             else
             {
-                    Close();
+                Close();
             }
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -156,25 +144,15 @@ namespace ANote
             {
                 log.WriteWarn(filenap,"textBox1","text changed!");
             }
-        }
-        private void button3_MouseEnter(object sender, EventArgs e)
-        {
-            button3.BackColor = Color.Red;
-        }
-        private void button3_MouseLeave(object sender, EventArgs e)
-        {
-            button3.BackColor = Color.Blue;
-        }
-        
+        }  
         private void Form1_Load(object sender, EventArgs e)
         {
             panel1.Width = Screen.PrimaryScreen.Bounds.Width;
-            this.Init();
             this.RegisteEvent();
             log.Create(filenap);
             log.WriteInfo(filenap, "main", "ANote Running,ver 1.0.3");
         }
-         bool isMouseDown = false; 
+        bool isMouseDown = false; 
         MouseDirection direction = MouseDirection.None;
         private void ResizeWindow()
         {
@@ -201,7 +179,6 @@ namespace ANote
         }
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
-            
             if (isMouseDown && direction != MouseDirection.None)
             {
                 ResizeWindow();
@@ -221,7 +198,6 @@ namespace ANote
             {
                 this.Cursor = Cursors.SizeNS;
                 direction = MouseDirection.Vertical;
-
             }             
             else
                 this.Cursor = Cursors.Arrow;
@@ -230,7 +206,6 @@ namespace ANote
         {
             isMouseDown = false;
         }
-
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -251,8 +226,8 @@ namespace ANote
         }
         private void button5_Click(object sender, EventArgs e)
         {
-            AboutBox1 form=new AboutBox1();
-            form.Show();
+            AboutBox1 ab1=new AboutBox1();
+            ab1.Show();
         }
         private void notifyIcon1_Click(object sender, EventArgs e)
         {
