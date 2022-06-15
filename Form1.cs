@@ -1,6 +1,5 @@
 ﻿using AX;
 using System;
-using System.Drawing;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -9,6 +8,20 @@ namespace ANote
 {
     public partial class Form1 : Form
     {
+        public void clc()
+        {
+            button1.Text = "保存";
+            button2.Text = "打开";
+            button5.Text = "关于";
+            button7.Text = "语言";
+        }
+        public void cle()
+        {
+            button1.Text = "Save As";
+            button2.Text = "Open";
+            button5.Text = "About";
+            button7.Text = "Langugue";
+        }
         [DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
         [DllImport("user32.dll")]
@@ -18,11 +31,12 @@ namespace ANote
         public const int HTCAPTION = 0x0002;
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();     
         }
         log log = new log();
         string time = DateTime.Now.ToString("HH:mm:ss");
         string filenap = System.Environment.CurrentDirectory + "\\" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") +"log.alf";
+        
         public enum MouseDirection
         {
             East,
@@ -44,7 +58,7 @@ namespace ANote
             this.DragEnter += textBox1_DragEnter;
             this.DragDrop += textBox1_DragDrop;
         }
-        private void textBox1_DragDrop(object sender, DragEventArgs e)
+        public void textBox1_DragDrop(object sender, DragEventArgs e)
         {
             IDataObject ido = e.Data;    
             string[] paths = (string[])ido.GetData(DataFormats.FileDrop);
@@ -56,13 +70,12 @@ namespace ANote
                 sr.Close();
                 textBox1.Text = text;
             }
-            
         }
-        private void textBox1_DragEnter(object sender, DragEventArgs e)
+        public void textBox1_DragEnter(object sender, DragEventArgs e)
         {
             e.Effect = DragDropEffects.Copy;
         }
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
             saveFileDialog1.Filter = "TextFile|*.txt|ANoteFile|*.anf|ANoteLogFile|*.alf|All files|*.*";
             saveFileDialog1.RestoreDirectory = true;
@@ -77,7 +90,7 @@ namespace ANote
                 sw.Close();
             }
         }       
-        private void button2_Click(object sender, EventArgs e)
+        public void button2_Click(object sender, EventArgs e)
         {
             string filePath = string.Empty;
             string fileContent = string.Empty;
@@ -100,11 +113,11 @@ namespace ANote
                 save = true;
             }
         }
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        public void Form1_MouseDown(object sender, MouseEventArgs e)
         {
             isMouseDown = true;
         }
-        private void button3_Click(object sender, EventArgs e)
+        public void button3_Click(object sender, EventArgs e)
         {
             if (save == false)
             {
@@ -137,7 +150,7 @@ namespace ANote
                 Close();
             }
         }
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        public void textBox1_TextChanged(object sender, EventArgs e)
         {
             save = false;
             if(save == false)
@@ -145,7 +158,7 @@ namespace ANote
                 log.WriteWarn(filenap,"textBox1","text changed!");
             }
         }  
-        private void Form1_Load(object sender, EventArgs e)
+        public void Form1_Load(object sender, EventArgs e)
         {
             panel1.Width = Screen.PrimaryScreen.Bounds.Width;
             this.RegisteEvent();
@@ -154,7 +167,7 @@ namespace ANote
         }
         bool isMouseDown = false; 
         MouseDirection direction = MouseDirection.None;
-        private void ResizeWindow()
+        public void ResizeWindow()
         {
             if (!isMouseDown)
                 return;
@@ -177,7 +190,7 @@ namespace ANote
             else
                 this.Cursor = Cursors.Arrow;
         }
-        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        public void Form1_MouseMove(object sender, MouseEventArgs e)
         {
             if (isMouseDown && direction != MouseDirection.None)
             {
@@ -202,40 +215,40 @@ namespace ANote
             else
                 this.Cursor = Cursors.Arrow;
         }
-        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        public void Form1_MouseUp(object sender, MouseEventArgs e)
         {
             isMouseDown = false;
         }
-        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        public void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, WM_SYSCOMMAND, SC_MOVE + HTCAPTION, 0);
             SendMessage(this.Handle, WM_SYSCOMMAND, SC_MOVE + HTCAPTION, 0);
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        public void button4_Click(object sender, EventArgs e)
         {
             SendToBack();
         }
-        private void Form1_ClientSizeChanged(object sender, EventArgs e)
+        public void Form1_ClientSizeChanged(object sender, EventArgs e)
         {
             textBox1.Size = this.ClientSize;
             button3.Left = this.ClientSize.Width - 27;
             button4.Left = this.ClientSize.Width - 81;
             button6.Left = this.ClientSize.Width - 54;
         }
-        private void button5_Click(object sender, EventArgs e)
+        public void button5_Click(object sender, EventArgs e)
         {
             AboutBox1 ab1=new AboutBox1();
             ab1.Show();
         }
-        private void notifyIcon1_Click(object sender, EventArgs e)
+        public void notifyIcon1_Click(object sender, EventArgs e)
         {
             TopMost=true;
             TopMost=false;
         }
         bool biggest = false;
-        private void button6_Click(object sender, EventArgs e)
+        public void button6_Click(object sender, EventArgs e)
         {
             if (biggest==false)
             {
@@ -251,6 +264,20 @@ namespace ANote
                 this.Left = Screen.PrimaryScreen.WorkingArea.Width / 4;
                 biggest = false;
             }    
+        }
+        bool zhcn = false;
+        public void button7_Click(object sender, EventArgs e)
+        {
+            if (zhcn==true)
+            {
+                cle();
+                zhcn = false;
+            }
+            else
+            {
+                clc();
+                zhcn = true;
+            }
         }
     }
 }
