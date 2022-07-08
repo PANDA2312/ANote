@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Threading;
 namespace AX
 {
     class log
@@ -9,8 +8,15 @@ namespace AX
         string enter = "\r\n";
         public void Create(string filepath)
         {
-            File.Create(filepath).Close();
-            File.AppendAllText(filepath,"ALog,version 1.0.0"+enter);
+            if (filepath == string.Empty)
+            {
+                File.Create(System.Environment.CurrentDirectory + @"\" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + "log.alf");
+            }
+            else
+            {
+                File.Create(filepath).Close();
+                File.AppendAllText(filepath, "ALog,version 1.0.1" + enter);
+            }
         }
         public void WriteInfo(string filepath, string type,string contents)
         {

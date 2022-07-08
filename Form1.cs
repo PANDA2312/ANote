@@ -1,5 +1,6 @@
 ﻿using AX;
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -36,7 +37,7 @@ namespace ANote
         log log = new log();
         string time = DateTime.Now.ToString("HH:mm:ss");
         string filenap = System.Environment.CurrentDirectory + "\\" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") +"log.alf";
-        
+        Process process = new Process();
         public enum MouseDirection
         {
             East,
@@ -163,7 +164,7 @@ namespace ANote
             panel1.Width = Screen.PrimaryScreen.Bounds.Width;
             this.RegisteEvent();
             log.Create(filenap);
-            log.WriteInfo(filenap, "main", "ANote Running,ver 1.0.3");
+            log.WriteInfo(filenap, "main", "ANote Running,ver 1.0.7");
         }
         bool isMouseDown = false; 
         MouseDirection direction = MouseDirection.None;
