@@ -10,7 +10,6 @@ namespace ANote
 {
     public partial class Form1 : Form
     {
-        public string arg;
         public void clc()
         {
             btnSave.Text = "保存";
@@ -122,7 +121,7 @@ namespace ANote
                 openFileDialog1.Filter = "文本文件|*.txt|ANo文件|*.anf|ANote日志文件|*.alf|所有文件|*.*";
                 openFileDialog1.RestoreDirectory = true;
                 DialogResult reslt = openFileDialog1.ShowDialog();
-                if (reslt == System.Windows.Forms.DialogResult.OK && !string.IsNullOrEmpty(openFileDialog1.FileName))
+                if (reslt == DialogResult.OK && !string.IsNullOrEmpty(openFileDialog1.FileName))
                 {
                     filePath = openFileDialog1.FileName;
                     StreamReader sr = new StreamReader(openFileDialog1.FileName);
@@ -316,6 +315,7 @@ namespace ANote
         public void button4_Click(object sender, EventArgs e)
         {
             SendToBack();
+            this.WindowState = FormWindowState.Minimized;
         }
         public void Form1_ClientSizeChanged(object sender, EventArgs e)
         {
@@ -324,6 +324,7 @@ namespace ANote
             btnExit.Left = this.ClientSize.Width - 27;
             btnBack.Left = this.ClientSize.Width - 81;
             btnFull.Left = this.ClientSize.Width - 54;
+            label2.Top = this.ClientSize.Height - 30;
         }
         public void btnAbout_Click(object sender, EventArgs e)
         {
@@ -344,10 +345,10 @@ namespace ANote
                 this.Width = 760;
                 this.Top = 0;
                 this.Left = 0;
-                for (int i=Screen.PrimaryScreen.Bounds.Height/1080*68; this.Width < Screen.PrimaryScreen.Bounds.Width;i-=2)
+                for (int i = Screen.PrimaryScreen.Bounds.Height / 1080 * 68; this.Width < Screen.PrimaryScreen.Bounds.Width; i -= 2)
                 {
-                    this.Height+=i;
-                    this.Width+=i;  
+                    this.Height += i;
+                    this.Width += i;
                 }
                 this.ClientSize = Screen.PrimaryScreen.WorkingArea.Size;
                 this.Top = 0;
@@ -377,7 +378,7 @@ namespace ANote
                 this.Top = Screen.PrimaryScreen.WorkingArea.Height / 4;
                 this.Left = Screen.PrimaryScreen.WorkingArea.Width / 4;
                 biggest = false;
-            }    
+            }
         }
         bool zhcn;
         public void button7_Click(object sender, EventArgs e)
