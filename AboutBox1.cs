@@ -102,5 +102,6 @@ namespace ANote
         {
             Close();
         }
+
     }
 }

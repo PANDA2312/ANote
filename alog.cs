@@ -4,6 +4,8 @@ namespace AX
 {
     class log
     {
+        public enum Writetype
+        { Info, Error, Warn }
         string time = DateTime.Now.ToString("HH:mm:ss");
         string enter = "\r\n";
         public void Create(string filepath)
@@ -15,20 +17,21 @@ namespace AX
             else
             {
                 File.Create(filepath).Close();
-                File.AppendAllText(filepath, "ALog,version 1.0.1" + enter);
+                File.AppendAllText(filepath, "ALog,version 1.0.2" + enter);
             }
         }
-        public void WriteInfo(string filepath, string type,string contents)
+        public void Write(Writetype writetype,string filepath, string type,string contents)
         {
-            File.AppendAllText(filepath, "[" + time + "]" + "[" + type + "/INFO]" + contents+enter);
-        }
-        public void WriteError(string filepath, string type, string contents)
-        {
-            File.AppendAllText(filepath, "[" + time + "]" + "[" + type + "/ERROR]" + contents + enter);
-        }
-        public void WriteWarn(string filepath, string type, string contents)
-        {
-            File.AppendAllText(filepath, "[" + time + "]" + "[" + type + "/WARN]" + contents+enter); 
+            if (writetype==Writetype.Info)
+            {
+                File.AppendAllText(filepath, "[" + time + "]" + "[" + type + "/INFO]" + contents+enter);
+            } else if(writetype==Writetype.Error)
+            {
+                File.AppendAllText(filepath, "[" + time + "]" + "[" + type + "/ERROR]" + contents + enter);
+            } else
+            {
+                File.AppendAllText(filepath, "[" + time + "]" + "[" + type + "/WARN]" + contents+enter); 
+            }
         }
     }
 }
