@@ -1,0 +1,11 @@
+C:\Users\xhd_2\source\repos\ANote v2\bin\Debug\ANote v2.exe.config
+C:\Users\xhd_2\source\repos\ANote v2\bin\Debug\ANote v2.exe
+C:\Users\xhd_2\source\repos\ANote v2\bin\Debug\ANote v2.pdb
+C:\Users\xhd_2\source\repos\ANote v2\obj\Debug\ANote v2.csproj.AssemblyReference.cache
+C:\Users\xhd_2\source\repos\ANote v2\obj\Debug\ANote v2.csproj.SuggestedBindingRedirects.cache
+C:\Users\xhd_2\source\repos\ANote v2\obj\Debug\ANote_v2.Form1.resources
+C:\Users\xhd_2\source\repos\ANote v2\obj\Debug\ANote_v2.Properties.Resources.resources
+C:\Users\xhd_2\source\repos\ANote v2\obj\Debug\ANote v2.csproj.GenerateResource.cache
+C:\Users\xhd_2\source\repos\ANote v2\obj\Debug\ANote v2.csproj.CoreCompileInputs.cache
+C:\Users\xhd_2\source\repos\ANote v2\obj\Debug\ANote v2.exe
+C:\Users\xhd_2\source\repos\ANote v2\obj\Debug\ANote v2.pdb

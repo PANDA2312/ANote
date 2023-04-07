@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 74</value>
+  </data>
+  <data name="编辑ToolStripMenuItem.Text" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="&gt;&gt;mainTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="mainTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 25</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialog1.Name" xml:space="preserve">
+    <value>saveFileDialog1</value>
+  </data>
+  <data name="mainTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 29</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="mainTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="字体ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;字体ToolStripMenuItem.Name" xml:space="preserve">
+    <value>字体ToolStripMenuItem</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="mainTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>2147483647</value>
+  </data>
+  <data name="关于ToolStripMenuItem.Text" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="打开ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAQEAAAAAAGAAoMgAAFgAAACgAAABAAAAAgAAAAAEAGAAAAAAAADIAAAAAAAAAAAAAAAAAAAAA
+        AAD/////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD/////////////////////////////////////////////////////////////////////////////
+        //////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KIAAAD/////////////////////////////////////////////////////////////
+        //////////////////////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////////////////////////////////////
+        //////////////////////////////////////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////////////////////
+        //////////////////////////////////////////////////////////////////8AAAD/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIA
+        AAD/////////////////////////////////////////////////////////////////////////////
+        //////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KIAAAD/////////////////////////////////////////////////////////////
+        //////////////////////////////////8AAAD/2KL/2KL/2KIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD/2KL/2KL/2KIAAAD/////////////////////////////////////////////
+        //////////////////////////////////////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////////////////////
+        //////////////////////////////////////////////////////////////////8AAAD/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIA
+        AAD/////////////////////////////////////////////////////////////////////////////
+        //////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KIAAAD/////////////////////////////////////////////////////////////
+        //////////////////////////////////8AAAD/2KL/2KL/2KIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD/2KL/2KL/2KIAAAD/////////////////////////////////////////////
+        //////////////////////////////////////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////////////////////
+        //////////////////////////////////////////////////////////////////8AAAD/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIA
+        AAD/////////////////////////////////////////////////////////////////////////////
+        //////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KIAAAD/////////////////////////////////////////////////////////////
+        //////////////////////////////////8AAAD/2KL/2KL/2KIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD/2KL/2KL/2KIAAAD/////////////////////////////////////////////
+        //////////////////////////////////////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////////////////////
+        //////////////////////////////////////////////////////////////////8AAAD/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIA
+        AAD/////////////////////////////////////////////////////////////////////////////
+        //////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KIAAAD/////////////////////////////////////////////////////////////
+        //////////////////////////////////8AAAD/2KL/2KL/2KIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD/2KL/2KL/2KIAAAD/////////////////////////////////////////////
+        //////////////////////////////////////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////////////////////
+        //////////////////////////////////////////////////////////////////8AAAD/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIA
+        AAD/////////////////////////////////////////////////////////////////////////////
+        //////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KIAAAD/////////////////////////////////////////////////////////////
+        //////////////////////////////////8AAAD/2KL/2KL/2KIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD/2KL/2KL/2KIAAAD/////////////////////////////////////////////
+        //////////////////////////////////////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////////////////////
+        //////////////////////////////////////////////////////////////////8AAAD/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIA
+        AAD/////////////////////////////////////////////////////////////////////////////
+        //////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KIAAAD/////////////////////////////////////////////////////////////
+        //////////////////////////////////8AAAD/2KL/2KL/2KIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD/2KL/2KL/2KIAAAD/////////////////////////////////////////////
+        //////////////////////////////////////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////////////////////
+        //////////////////////////////////////////////////////////////////8AAAD/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIA
+        AAD/////////////////////////////////////////////////////////////////////////////
+        //////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KIAAAD/////////////////////////////////////////////////////////////
+        //////////////////////////////////8AAAD/2KL/2KL/2KIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD/2KL/2KL/2KIAAAD/////////////////////////////////////////////
+        //////////////////////////////////////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////////////////////
+        //////////////////////////////////////////////////////////////////8AAAD/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIA
+        AAD/////////////////////////////////////////////////////////////////////////////
+        //////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KIAAAD/////////////////////////////////////////////////////////////
+        //////////////////////////////////8AAAD/2KL/2KL/2KIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD/2KL/2KL/2KIAAAD/////////////////////////////////////////////
+        //////////////////////////////////////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////////////////////
+        //////////////////////////////////////////////////////////////////8AAAD/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //8AAAD/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/
+        2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KL/2KIA
+        AAD/////////////////////////////////////////////////////////////////////////////
+        //////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KIAAAD/2KL/2KL/2KL/2KIAAAD/2KL/2KL/
+        2KL/2KIAAAD/2KL/2KL/2KL/2KIAAAD/2KL/2KL/2KL/2KIAAAD/2KL/2KL/2KL/2KIAAAD/2KL/2KL/
+        2KL/2KL/2KL/2KIAAAD/////////////////////////////////////////////////////////////
+        //////////////////////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KIAAAD/2KL/2KL/2KL/
+        2KIAAAD/2KL/2KL/2KL/2KIAAAD/2KL/2KL/2KL/2KIAAAD/2KL/2KL/2KL/2KIAAAD/2KL/2KL/2KL/
+        2KIAAAD/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////////////////////////////////////
+        //////////////////////////////////////////////////8AAAD/2KL/2KL/2KL/2KL/2KL/2KIA
+        AAD/2KL/2KL/2KL/2KIAAAD/2KL/2KL/2KL/2KIAAAD/2KL/2KL/2KL/2KIAAAD/2KL/2KL/2KL/2KIA
+        AAD/2KL/2KL/2KL/2KIAAAD/2KL/2KL/2KL/2KL/2KL/2KIAAAD/////////////////////////////
+        //////////////////////////////////////////////////////////////////8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////8AAAD///////////////8AAAD///////////////8AAAD/////
+        //////////8AAAD///////////////8AAAD///////////////8AAAD/////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////8AAAD///////////////8AAAD/////////
+        //////8AAAD///////////////8AAAD///////////////8AAAD///////////////8AAAD/////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////8AAAD/////////////
+        //8AAAD///////////////8AAAD///////////////8AAAD///////////////8AAAD/////////////
+        //8AAAD/////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+</value>
+  </data>
+  <data name="&gt;&gt;另存为ToolStripMenuItem.Name" xml:space="preserve">
+    <value>另存为ToolStripMenuItem</value>
+  </data>
+  <data name="文件ToolStripMenuItem.Text" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ANote</value>
+  </data>
+  <data name="另存为ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="编辑ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 21</value>
+  </data>
+  <data name="&gt;&gt;mainTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;文件ToolStripMenuItem.Name" xml:space="preserve">
+    <value>文件ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;保存ToolStripMenuItem.Name" xml:space="preserve">
+    <value>保存ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;保存ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="文件ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 21</value>
+  </data>
+  <data name="&gt;&gt;打开ToolStripMenuItem.Name" xml:space="preserve">
+    <value>打开ToolStripMenuItem</value>
+  </data>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="mainTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.5pt</value>
+  </data>
+  <data name="mainTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
+  </data>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;另存为ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="另存为ToolStripMenuItem.Text" xml:space="preserve">
+    <value>另存为</value>
+  </data>
+  <data name="&gt;&gt;关于ToolStripMenuItem.Name" xml:space="preserve">
+    <value>关于ToolStripMenuItem</value>
+  </data>
+  <data name="保存ToolStripMenuItem.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="&gt;&gt;fontDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FontDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;关于ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="打开ToolStripMenuItem.Text" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Name" xml:space="preserve">
+    <value>openFileDialog1</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="&gt;&gt;编辑ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;字体ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;mainTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 457</value>
+  </data>
+  <data name="&gt;&gt;mainTextBox.Name" xml:space="preserve">
+    <value>mainTextBox</value>
+  </data>
+  <data name="&gt;&gt;fontDialog1.Name" xml:space="preserve">
+    <value>fontDialog1</value>
+  </data>
+  <data name="&gt;&gt;打开ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="字体ToolStripMenuItem.Text" xml:space="preserve">
+    <value>字体</value>
+  </data>
+  <data name="保存ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;编辑ToolStripMenuItem.Name" xml:space="preserve">
+    <value>编辑ToolStripMenuItem</value>
+  </data>
+  <data name="mainTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>799, 427</value>
+  </data>
+  <data name="关于ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 21</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="menuStrip1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;文件ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>byn</value>
+  </metadata>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>371, 17</value>
+  </metadata>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>107, 17</value>
+  </metadata>
+  <metadata name="fontDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>519, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>227, 17</value>
+  </metadata>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>
