@@ -1,0 +1,17 @@
+D:\source\repos\Project2\ANote\bin\Release\ANote.exe.config
+D:\source\repos\Project2\ANote\bin\Release\ANote.exe
+D:\source\repos\Project2\ANote\bin\Release\ANote.pdb
+D:\source\repos\Project2\ANote\bin\Release\Magnum.dll
+D:\source\repos\Project2\ANote\bin\Release\Newtonsoft.Json.dll
+D:\source\repos\Project2\ANote\bin\Release\Magnum.xml
+D:\source\repos\Project2\ANote\bin\Release\Newtonsoft.Json.xml
+D:\source\repos\Project2\ANote\obj\Release\ANote.csproj.AssemblyReference.cache
+D:\source\repos\Project2\ANote\obj\Release\ANote.csproj.SuggestedBindingRedirects.cache
+D:\source\repos\Project2\ANote\obj\Release\ANote.AboutBox1.resources
+D:\source\repos\Project2\ANote\obj\Release\ANote.Form1.resources
+D:\source\repos\Project2\ANote\obj\Release\ANote.Properties.Resources.resources
+D:\source\repos\Project2\ANote\obj\Release\ANote.csproj.GenerateResource.cache
+D:\source\repos\Project2\ANote\obj\Release\ANote.csproj.CoreCompileInputs.cache
+D:\source\repos\Project2\ANote\obj\Release\ANote.csproj.CopyComplete
+D:\source\repos\Project2\ANote\obj\Release\ANote.exe
+D:\source\repos\Project2\ANote\obj\Release\ANote.pdb
